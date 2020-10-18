@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+*{
+	margin:0;
+	padding: 0;
+	font-family: 'Open Sans Condensed', sans-serif;
+}
+.fondo{
+	widows: 100%;
+	min-height:100vh;;
+	background: linear-gradient(90deg, rgba(125, 236, 153,.5), rgba(116, 92, 4 ,.9));
+	position: relative;
+}
+.hero{
+	width: 80%;
+	margin: auto;
+
+}
+.navbar{
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
+.navbar img{
+	margin: 10px 0;
+	
+}
+
+ul{
+	flex: 1;
+	text-align: right;
+}
+ul li{
+	display: inline-block;
+	list-style: none;
+	margin: 0 25px;
+}
+ul li a{
+	text-decoration: none;
+	
+	padding: 0 10px;
+	position: relative;
+	cursor: pointer;
+     color: #fff;
+
+}
+ul li ::after{
+	content: '';
+	width: 0;
+	height: 5px;
+	background:#4E2D01;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 50px;
+	transition: 0.5s;
+
+}
+ul li :hover::after{
+	width: 100%;
+}
+.navbar-icon{
+
+	margin-left: 40px;
+}
+.navbar-icon img{
+	height: 25px;
+	margin-left: 25px;
+	cursor: pointer;
+}
+.baner{
+	display: flex;
+	margin-top: 80px;
+}
+.left-colum,.right-colum{
+	flex-basis: 50%;
+	
+}
+
+.right-colum img{
+	width: 400px;
+	box-shadow: 12px 12px 20px #666;
+}
+
+
+.left-colum img{
+	width: 100%;
+}
+.left-colum h1{
+	font-size: 43px;
+	font-weight: 700;
+
+}
+
+.left-colum p{
+	background: linear-gradient(120deg, #735B05  ,#559247  ,#AFD7A5 );
+   -webkit-background-clip: text;
+     color: transparent;
+	font-size: 15px;
+	font-weight: bold;
+	margin: 50px 0;
+	font-family: 'Lobster', cursive;
+	
+}
+span {
+	color: #086019;
+	font-weight: bold;
+}
+.btn button{
+	padding: 10px 25px;
+	margin-right: 15px;
+	outline: none;
+	border:1px solid #3E2603 ;
+	border-radius: 20px;
+	cursor: pointer;
+	
+	background:transparent;
+}
+.btn .primer{
+
+	background: linear-gradient(rgba(198, 232, 151,.3),rgba(127, 210, 12, .4));
+	box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
+	color:#543701;
+	font-family: fantasy;
+	font-size: 17px;
+}
+.btn .tienda{
+	background:rgba(198, 232, 151,.3);
+	color: #015403;
+	font-family: fantasy;
+	font-size: 15px;
+}
+.btn{
+	margin-bottom: 80px;
+}
+.redes{
+	width: 200px;
+	text-align: center;
+	opacity: .4;
+	position: relative;
+}
+.redes img{
+	width: 20px;
+	height: 20px;
+	margin: 0 14px;
+}
